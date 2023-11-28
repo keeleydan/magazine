@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Brush;
+    src: url(Kayla.otf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Brush;
+    font-weight: bold;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(255,255,255,0.3),rgb(0,0,0,0.7)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width:90px;
+    position:absolute;
+    top:2%;
+    left:2%;
+}
+.home-text{
+    text-align: center;
+    color: black;
+    padding-top: 110px;
+    
+}
+.home-text h1{
+    font-size: 110px;
+}
+.home-text p{
+    font-size:30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+nav ul li a{
+    color:black;
+    text-decoration:none;
+    font-size: 16px;
+}
+nav ul li::after{
+    content:'';
+    width:0%;
+    height: 3px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.account{
+    margin: 40px auto 0;
+}
+.account a{
+    text-decoration: none;
+    color: black;
+    border: 3px solid  black;
+    display: inline-block;
+    border-radius: 40%;
+    padding: 10px 24px;
+    width: 100px;
+    font-size:15px;
+    margin: 0 7px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.account a span{
+    width:0%;
+    height:100%;
+    position: absolute;
+    border-radius: 40%;
+    top:0;
+    left:0;
+    background:whitesmoke;
+    z-index: -1;
+    transition: 0.5s;
+}
+.account a:hover span{
+    width:100%
+} 
+@media(max-width: 770px) {
+    .banner-text h1{
+        font-size: 20px;
+    }
+    .account a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+#login{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(255,255,255,0.2),rgb(0,0,0,0.0)),url(logiinn/flower.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.login-information{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    right: -35%;
+    top: 7%;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-information .login-box{
+    width: 100%;
+    padding: 50px;
+}
+.login-box h2{
+    font-size: 30px;
+    color: black;
+    margin: 0 100px;
+    padding: 20px;
+}
+.input-box input{
+    width: 90%;
+    height: 70%;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon {
+    position: absolute;
+    right: 40px;
+    font-size: 1.2em;
+    line-height: 45px;
+}
+.remember{
+    font-size: .9em;
+    font-weight: 500;
+    margin: -2px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember a{
+    color: black;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+    color: rosybrown;
+}
+.butype{
+    width:100%;
+    height: 45px;
+    background: rosybrown;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#signup{
+    width: 100%;
+    height: 100vh;
+    background-image:url(logiinn/nice.jpg);
+    background-size: cover;
+    filter: contrast(110%) saturate(110%);
+    background-position: center;
+} 
+
+.signup-information{
+    position: relative;
+    width: 460px;
+    height: 500px;
+    right: -35%;
+    top: 3%;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-information .signup-box{
+    width: 100%;
+    padding: 50px;
+}
+.signup-box h2{
+    font-size: 30px;
+    color: black;
+    margin: 0% 150px;
+    padding: 20px;
+}
+#food{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    margin: 0;
+}
+.food-text{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    
+}
+.food-text h1{
+    font-size: 70px;
+}
+.food-text h2{
+    font-size:52px;
+}
+.food-text h1,h2{
+    display: inline-block;
+}
+.food-text p{
+    font-size: 40px;
+}
+.junk-text p{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 40px;
+}
+.drink-text p{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+  }
+  
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+#fashion{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    margin: 0; 
+}
+.fashion-text{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+}
+.fashion-text h1{
+    font-size: 70px;
+}
+.fashion-text p{
+    font-size: 40px;
+}
+#design{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    margin: 0; 
+}
+.interior-text h1{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    font-size: 40px
+}
+#building{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    margin: 0; 
+}
+.archi-text h1{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    font-size: 40px
+}
+  
